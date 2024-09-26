@@ -9,7 +9,16 @@
         }
         static void Jack()
         {
-            Console.WriteLine("This is Jack");
+            int age, days, hours;
+            string temp;
+
+            Console.Write("What is your age? ");
+            temp = Console.ReadLine();
+            age = Convert.ToInt32(temp);
+            days = age * 365;
+            hours = days * 24;
+            Console.WriteLine($" If you are {age} then the total days you have been alive is {days} and the total hours is {hours} ");
+            Console.ReadLine();
         }
         static void Mohammad()
         {
