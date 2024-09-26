@@ -109,5 +109,22 @@ namespace ProjectStudio
             Console.ReadLine();
 
         }
+        static void Jack1()
+            {
+                char startChar = 'a';
+                char stopChar = 'z';
+                for (char row = startChar; row <= stopChar; row++)
+                {
+                    for (char col = startChar; col <= row; col++)
+                    {
+                        Console.Write(col);
+                    }
+                    Console.WriteLine();
+                }
+                Console.ReadLine();
+            }
+
+            
     }
+
 }
