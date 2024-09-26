@@ -123,6 +123,18 @@ namespace ProjectStudio
                 }
                 Console.ReadLine();
             }
+            static void Mohammad1()
+            {
+                static void Main(string[] args)
+                {
+                    string temp;
+                    int Age;
+                    Console.Write("How old are you?");
+                    temp = Console.ReadLine();
+                    Age = Convert.ToInt32(temp);
+                    Console.WriteLine("Age = " + Age + " Days " + Age * 365 + " Hours " + Age * 365 * 24);
+                    Console.ReadLine();
+                }
 
             
     }
