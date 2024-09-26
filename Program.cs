@@ -9,7 +9,7 @@
         }
         static void Jack()
         {
-
+            Console.WriteLine("This is Jack");
         }
         static void Mohammad()
         {
@@ -18,6 +18,7 @@
         }
         static void Jacob()
         {
+            Console.WriteLine("This is Jacob");
 
         }
     }
