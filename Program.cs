@@ -1,4 +1,6 @@
-﻿namespace ProjectStudio
+﻿using System;
+
+namespace ProjectStudio
 {
     internal class Program
     {
@@ -23,8 +25,56 @@
         static void Mohammad()
         {
             Console.WriteLine("hello world from Mohamamd");
+            string temp;
+            int age;
+            char answer;
+            Random rand = new Random();
+            Console.WriteLine("how old are you?");
+            temp = Console.ReadLine();
+            age = Convert.ToInt32(temp);
+            if (age < 18)
+            {
+                Console.WriteLine("goodbye you're too young to play");
+                Console.ReadLine();
 
-        }
+            }
+            else
+            {
+                do
+                {
+
+
+                    int total = 0;
+                    for (int i = 0; i < 5; i++)
+                    {
+                        int card = rand.Next(1, 14);
+                        switch (card)
+                        {
+                            case 1:
+                                total += 20;
+                                break;
+                            case 11:
+                            case 12:
+                            case 13:
+                                total += 10;
+                                break;
+                            default:
+                                total -= card;
+                                break;
+
+
+                        }
+                        Console.WriteLine($"your card ={card} your total={total}");
+                        Console.ReadLine();
+                    }
+                    Console.WriteLine("would you like to play again 'y' or 'n'");
+                    string ans = Console.ReadLine();
+                    answer = Convert.ToChar(ans);
+
+
+                } while (answer == 'y');
+
+            }
         static void Jacob()
         {
             Random rand = new Random();
