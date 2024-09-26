@@ -13,6 +13,7 @@
         }
         static void Mohammad()
         {
+            Console.WriteLine("hello world from Mohamamd");
 
         }
         static void Jacob()
